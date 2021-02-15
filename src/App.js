@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Greet from './components/Greet';
+import { Welcome } from "./components/Welcome";
+import { Message } from "./components/Message";
+import Parent from './components/Parent';
+import Forms from './components/Forms';
+import Fragment from './components/Fragment'
+import { Portals } from "./components/Portals";
+import Hero from './components/Hero';
+import ErrorBoiundary from './components/ErrorBoiundary';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ErrorBoiundary>
+      <Hero heroName ="BATMAN"></Hero>
+      </ErrorBoiundary>
+      <ErrorBoiundary>
+      <Hero heroName ="Joker"></Hero>
+      </ErrorBoiundary>
+      {/* <Portals></Portals> */}
+      {/* <Fragment></Fragment> */}
+      {/* <Forms></Forms> */}
+      {/* <Parent></Parent> */}
+      {/* <Greet name="Zakariya" power="Developer"></Greet>
+      <Welcome name="Zakariya" power="BATMAN"></Welcome>
+      <Message></Message> */}
     </div>
   );
 }
