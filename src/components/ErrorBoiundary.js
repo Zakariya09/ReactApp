@@ -15,7 +15,7 @@ export class ErrorBoiundary extends Component {
         }
     }
     render() {
-       if(this.state.hasError == true){
+       if(this.state.hasError === true){
            
         return (
             <div>

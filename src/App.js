@@ -8,15 +8,17 @@ import Fragment from './components/Fragment'
 import { Portals } from "./components/Portals";
 import Hero from './components/Hero';
 import ErrorBoiundary from './components/ErrorBoiundary';
+import ClickCounter from './components/ClickCounter';
 function App() {
   return (
     <div className="App">
-      <ErrorBoiundary>
+      <ClickCounter></ClickCounter>
+      {/* <ErrorBoiundary>
       <Hero heroName ="BATMAN"></Hero>
       </ErrorBoiundary>
       <ErrorBoiundary>
-      <Hero heroName ="Joker"></Hero>
-      </ErrorBoiundary>
+      <Hero heroName ="Joker"></Hero> */}
+      {/* </ErrorBoiundary> */}
       {/* <Portals></Portals> */}
       {/* <Fragment></Fragment> */}
       {/* <Forms></Forms> */}
