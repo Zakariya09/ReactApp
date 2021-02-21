@@ -10,11 +10,17 @@ import Hero from './components/Hero';
 import ErrorBoiundary from './components/ErrorBoiundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounter2 from './components/ClickCounter2';
+import HoverCounter2 from './components/HoverCounter2';
+import User from './components/User';
 function App() {
   return (
     <div className="App">
-      <ClickCounter name="Zakariya"></ClickCounter>
-      <HoverCounter></HoverCounter>
+      <ClickCounter2></ClickCounter2>
+      <HoverCounter2></HoverCounter2>
+      <User name={(isLoggedIn)=> isLoggedIn ? 'Zakariya': 'User'}/>
+      {/* <ClickCounter name="Zakariya"></ClickCounter>
+      <HoverCounter></HoverCounter> */}
       {/* <ErrorBoiundary>
       <Hero heroName ="BATMAN"></Hero>
       </ErrorBoiundary>
