@@ -9,10 +9,12 @@ import { Portals } from "./components/Portals";
 import Hero from './components/Hero';
 import ErrorBoiundary from './components/ErrorBoiundary';
 import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     <div className="App">
-      <ClickCounter></ClickCounter>
+      <ClickCounter name="Zakariya"></ClickCounter>
+      <HoverCounter></HoverCounter>
       {/* <ErrorBoiundary>
       <Hero heroName ="BATMAN"></Hero>
       </ErrorBoiundary>
