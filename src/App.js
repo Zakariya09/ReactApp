@@ -13,12 +13,21 @@ import HoverCounter from './components/HoverCounter';
 import ClickCounter2 from './components/ClickCounter2';
 import HoverCounter2 from './components/HoverCounter2';
 import User from './components/User';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
+import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 function App() {
   return (
     <div className="App">
-      <ClickCounter2></ClickCounter2>
+      <PostForm></PostForm>
+      {/* <PostList></PostList> */}
+      {/* <UserProvider value="Zakariya">
+      <ComponentC/>
+      </UserProvider> */}
+      {/* <ClickCounter2></ClickCounter2>
       <HoverCounter2></HoverCounter2>
-      <User name={(isLoggedIn)=> isLoggedIn ? 'Zakariya': 'User'}/>
+      <User name={(isLoggedIn)=> isLoggedIn ? 'Zakariya': 'User'}/> */}
       {/* <ClickCounter name="Zakariya"></ClickCounter>
       <HoverCounter></HoverCounter> */}
       {/* <ErrorBoiundary>
